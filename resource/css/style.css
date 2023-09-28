@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Comfortaa;
+}
+
+.container-login{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.box1{
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.box-login{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    background-image: linear-gradient(#ff3c64,#fff);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-image{
+    width: 550px;
+    height: 400px;
+    margin-top: 100px;
+    margin-right: 50px;
+}
+
+.heading{
+    font-size: 200%;
+    color: #226880;
+    float: left;
+    font-family: Comfortaa;;
+    margin-left: 50px;
+    word-spacing: 5px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.head-quote{
+    font-size: 200%;
+    color: #226880;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 50;
+    text-align: center;
+}
+
+.login-box{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    height:500px;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox{
+    width: 400px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    padding-left: 10px;
+    font-family: Comfortaa;
+    font-size: 20px;
+    color: #226880;
+    font-weight: 200;
+}
+
+.login-btn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #ff3c64;
+    font-family: Comfortaa;
+    font-size: 20px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    float: right;
+
+}
+
+.login-btn:hover{
+    background-color: #226880;
+    color: white;
+}
+
+.login-text{
+    color: #226880;
+    font-family: Comfortaa;
+    font-weight: 200;
+}
+
+.create-new-ac{
+    text-decoration: none;
+    color: #226880;
+    font-family: comfortaa;
+}
+.create-new-ac:hover{
+    text-decoration: none;
+    color: #ff3c64;
+    font-weight: 500;
+}
+
+/*------------------------------------------- Signup CSS------------------------------ */
+
+.container-signup{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.signup-box1{
+    width: 30%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.signup-image{
+    width:400px;
+    height: 550px;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+
+.signup-box2{
+    width: 70%;
+    height: 100%;
+    display:flex;
+    background-image: linear-gradient(#BAEBDF,#fff);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote{
+    font-size: 150%;
+    color: #ff3c64;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    font-style: normal;
+    font-weight: 50;
+    text-align: center;
+    font-family: Comfortaa;
+}
+
+.signup-form{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 500px;
+    border-radius: 20px;
+    height:500px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* --------------------------User Deatils CSS---------------------------------- */
+.user-details{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#ff3c64,#fff);;
+}
+.container-user-detials{
+    width: 50%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex: 1;   
+}
+
+.gender{
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    border: none;
+    margin: 10px;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-family: Comfortaa;
+}
+
+.user-heading{
+    align-self: flex-start;
+    margin-left: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: comfortaa;
+    margin-top: 50px;
+}
+
+.genderImage{
+    height: 300px;
+
+}
+
+.genderImage:hover{
+    cursor: pointer;
+}
+.container-gender{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media(max-width:1080px){
+    .login-image {
+        width: 200px;
+        height: 200px;
+        margin-top: 50px;
+        margin-right: 0;
+    }
+    
+    .container-login {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .box-login {
+        width: 100%;
+        height: auto;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order:1;
+    }
+
+    .login-box {
+        width: 80%;
+        text-align: center;
+        background-color: white;
+        border-radius: 20px;
+        height: auto; 
+        margin: 10px;
+    }
+
+    .textbox{
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        font-size: 100%;
+    }
+
+    .login-btn {    
+        width: 100%;
+        height: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 100%;
+    }
+    
+    .heading {
+        font-size: 150%;
+    }
+    
+    .box1 h2 {
+        font-size: 150%;
+    }
+}
