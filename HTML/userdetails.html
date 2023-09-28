@@ -1,0 +1,104 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>User Details</title>
+    <link rel="stylesheet" href="resource/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&amp;family=Handjet:wght@200&amp;display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    </head>
+
+    <body class="user-details">
+        
+        <h1 class="user-heading"> We are curious to know about you</h1>
+        
+        <div class="container-user-detials">
+
+                <div id="gender-div" class="gender">
+
+                    <div class="me-5 container-gender">
+                        <img id="female" class="genderImage" src="resource/img/gender_female.png" alt="female">
+                        <h4 class="mt-3" style="color: #ff3c64;"> female</h4>
+                    </div>
+
+                    <div id="male" class="ms-5 container-gender">
+                        <img class="genderImage" src="resource/img/gender_male.png" alt="male">
+                        <h4 class="mt-3" style="color: #ff3c64;"> male</h4>
+                    </div>
+
+                </div>
+
+                
+        
+        </div>
+
+        <div id="location-div" class="container-location" >
+            <h3  class="heading3"> Location</h3>
+
+            <img class="locationImage" src="resource/img/bycycle.png" alt="bycycle">
+            
+
+            <input id="location" class="textbox" type="text" placeholder="Mohali, Punjab" name="Location" value="">
+
+
+            <button id="proceed-location" type="submit" class="login-btn">Proceed</button>
+
+            
+        </div>
+
+        <div id="education-div" class="container-education">
+            <h3  class="heading3">Your College</h3>
+
+            <div style="display: flex; flex-direction: row;">
+
+                <div style="display: flex; flex-direction: column; margin: 10px; justify-content: center;">
+
+                    <input id="college" class="textbox" type="text" placeholder="College" name="Education" value="" style="margin-left: 10px; margin-right: 10px;">
+
+                    <input id="college" class="textbox" type="text" placeholder="Course" name="Education" value="" style="margin: 10px;">
+
+                    <div style="display: flex;">
+                        <input id="college" class="textbox-small" type="text" placeholder="B.Tech" name="Education" value="" >
+                        <input id="college" class="textbox-small" type="text" placeholder="B.Tech" name="Education" value="" style="width: 180px;">
+                    </div>
+                </div>
+                <img class="educationImage" src="resource/img/girl_with_book.png" alt="education">
+            </div>
+
+            <button id="proceed-education" class="login-btn">Proceed</button>
+        </div>
+
+        <div id="interest-div" class="container-interest">
+            <h3  class="heading3">Your Interests</h3>
+
+            <div style="display: flex; flex-direction: row;">
+
+                <img class="interestImage" src="resource/img/guitar.png" alt="interest">
+
+                <div style="display: flex; flex-direction: column; margin: 10px; justify-content: center;">
+                    
+                    <h4 class="heading4">Interests</h4>
+
+                    <textarea name="Interests" id="userInterests" cols="30" rows="10" class="textbox" placeholder="Music, Dance, Sports" style="font-size: 15px; padding: 10px;"></textarea>
+
+                    <h4 class="heading4" style="margin-top: 20px;">Experience</h4>
+                    <textarea name="Experience" id="userExpereice" cols="30" rows="10" class="textbox" placeholder="DSA, CP, Java" style="font-size: 15px; padding: 10px;"></textarea>
+
+                    <button id="proceed-interest" class="login-btn" style="align-self: flex-end; margin-top: 20px;">Finish</button>
+
+                </div>
+                
+            </div>
+
+            
+
+        </div>
+
+        <script type="module" src="userDetails.js"></script>
+    </body>
+
+
+
+</html>

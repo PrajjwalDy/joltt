@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-div{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.left-menu{
+    position: fixed;
+    width: 20%;
+    height: 100%;
+    background-color: #ffc4d0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.middle-menu{
+    width: 80%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+
+}
+
+.appbar{
+    width: 100%;
+    height: 60px;
+    background-color: #226880;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.appbar-title{
+    font-size: 24px;
+    font-family: comfortaa;
+    color: #fff;
+    margin-top:20px;
+}
+
+
+.center{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+
+}
+
+.right-menu{
+    position: fixed;
+    width: 40%;
+    height: 100%;
+    background-color: #ffc4d0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.joltt-icon{
+    width: 150px;
+    margin: 20px;
+}
+
+.posts{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: auto;
+}
+
+.confession-card{
+    width: 600px;
+    background-color: #fff;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.publisher-info{
+    width: 100%;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+}
+
+.circular-image{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+    overflow: hidden    ;
+}
+
+.circular-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    overflow: hidden    ;
+}
+
+.publisher-image{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#publisher-name{
+    font-size: 18px;
+    margin: 10px;
+    font-family: comfortaa;
+    color: #226880;
+}
+
+.post-data{
+    width: 500px;
+    align-self: flex-end;
+    background-color: #fff;
+    display: flex;
+    margin: 10px;
+    flex-direction: column;
+}
+
+.caption{
+    font-size: 18px;
+    margin-right: 10px;
+    font-family: comfortaa;
+    color: #226880;
+    margin-left: 60px;
+    margin-bottom: 50px;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.post-image{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    align-self: flex-end;
+    margin-right: 20px;
+}
+
+.option-img{
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    object-fit: cover;
+}
+
+.options{
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s;
+}
+
+#option-text{
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 12px;
+    font-family: comfortaa;
+    color: #226880;
+}
+
+.options:hover{
+    background: #ffd7df;
+}
+
+.selected{
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.profile-option{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.username{
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: comfortaa;
+    color: #226880;
+}
+
+.confession-option{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -35px;
+    align-items: center;
+    align-self: center;
+    justify-content: space-around;
+    background-color: #BAEBDF;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.object-image{
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+    object-fit: cover;
+}

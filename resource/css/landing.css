@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.verticle{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horizontal{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcome-img{
+    width: 300px;
+    height: auto;
+    background-size: cover;
+    margin-top: 50px;
+    z-index: -1;
+}
+
+.welcome-text{
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 50px;
+    color: #54CBAF;
+    font-family: comfortaa;
+    text-align: center;
+}
+
+.normal-text{
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 20px;
+    color: #54CBAF;
+    font-family: comfortaa;
+    text-align: center;
+}
+
+#signinbtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #226880;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    font-family: comfortaa;
+    outline: none;
+}
+
+#signinbtn:hover{
+    background-color: #ff3c64;
+}
+
+#signupbtn{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #54CBAF;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: none;
+    font-family: comfortaa;
+    outline: none;
+}
+#signupbtn:hover{
+    background-color: #ff3c64;
+}
+
+
+@media(max-width:1080px){
+    .welcome-img{
+        width: 200px;
+        height: auto;
+        background-size: cover;
+        margin-top: 50px;
+        z-index: -1;
+    }
+    .welcome-text{
+        font-size: 40px;
+        font-weight: 700;
+        margin-top: 50px;
+        color: #54CBAF;
+        font-family: comfortaa;
+    }
+    .normal-text{
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        color: #54CBAF;
+        font-family: comfortaa;
+    }
+    #signinbtn{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #226880;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    #signinbtn:hover{
+        background-color: #ff3c64;
+    }
+    #signupbtn{
+        width: 200px;
+        height: 50px;
+        border-radius: 10px;
+        background-color: #54CBAF;
+        color: white;
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+    }
+    #signupbtn:hover{
+        background-color: #ff3c64;
+    }
+}

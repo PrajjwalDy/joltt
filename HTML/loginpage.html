@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+        <title>Joltt/login</title>
+        <link rel="stylesheet" href="/resource/css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Handjet:wght@200&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="container-login">
+
+            <div class="box1">
+                <h1 class="heading">Welcome to Joltt</h1>
+                <img src="/resource/img/report_img.png" alt="image" class="login-image">
+                <h2 class="head-quote">Spark Your Success</h2>
+            </div>
+
+            <div class="box-login">
+                <div class="login-box">
+                    <h1 class="login-text">Login</h1>
+                    <form action="">
+                        <div class="mb-3">
+                            <input id="userEmail" class="textbox" type="text" placeholder="Username" name="username" value="">
+                        </div>
+    
+                        <div class="mb-3">
+                            <input id="userPassword" class="textbox" type="password" placeholder="Password" name="password" value="">
+                        </div>
+                        <button id="signinbtn" type="submit" class="login-btn">Login</button>
+                    </form>
+
+                    <a class="mt-5 create-new-ac" href="signup.html"><h5>Create new account</h5></a>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="mobile-view">
+            <img class="logo-mv" src="/resource/img/joltt-green.png" alt="logo">
+            <img class="welcome-img-mv" src="/resource/img/welcome_back.png" alt="welcome">
+
+            <div class="login-box-mv">
+                <form action="">
+                    <div class="mb-3">
+                        <input id="userEmail" class="textbox-mv" type="text" placeholder="Username" name="username" value="">
+                    </div>
+
+                    <div class="mb-3">
+                        <input id="userPassword" class="textbox-mv" type="password" placeholder="Password" name="password" value="">
+                    </div>
+                    <button id="signinbtn" type="submit" class="loginbtn-mv">Login</button>
+                </form>
+
+                <a class="mt-5 create-new-ac-mv" href="signup.html"><h5>Create new account</h5></a>
+            
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+        <script type="module" src="/JS/signin.js"></script>
+    </body>
+    
+</html>
