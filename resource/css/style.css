@@ -376,6 +376,9 @@ body{
     display: none;
 }
 
+.singnup-mv{
+    display: none;
+}
 /* --------------------------User Deatils CSS---------------------------------- */
 
 
@@ -383,8 +386,16 @@ body{
    .container-login{
     display: none;
    }
+   .container-signup{
+    display: none;
+   }
 
    .mobile-view{
+    display: flex;
+    flex-direction: column;
+   }
+
+   .singnup-mv{
     display: flex;
     flex-direction: column;
    }

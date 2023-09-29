@@ -19,6 +19,7 @@ const firebaseConfig = {
 
   //objects
   const postContainer = document.getElementById('post-container');
+  const postContainerMV = document.getElementById('post-container-mv');
   var userName1 = document.getElementById('usernameProfile');
   var userProfile1 = document.getElementById('userProfileImage');
   
@@ -89,9 +90,11 @@ const firebaseConfig = {
         // Append publisher info and post data to the post card
         postCard.appendChild(publisherInfo);
         postCard.appendChild(postContent);
+        const postCardClone = postCard.cloneNode(true);
       
         // Append the post card to the post container
-        postContainer.appendChild(postCard);
+        postContainerMV.appendChild(postCard);
+        postContainer.appendChild(postCardClone);
       }else{
         console.log("No data available");
       }
