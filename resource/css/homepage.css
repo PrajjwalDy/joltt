@@ -255,7 +255,7 @@
     justify-content: space-around;
     align-items: center;
     position: fixed;
-    background-color: #ffc4d0;
+    background-color: #ffffff;
     bottom: 0;
     left: 0;
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
@@ -273,13 +273,13 @@
 }
 
 .nav-bar-img{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     object-fit: cover;
 }
 
 .nav-bar-text{
-    font-size: 14px;
+    font-size: 12px;
     font-family: comfortaa;
     color: #226880;
 }
@@ -339,8 +339,17 @@
     align-items: center;
 
 }
+
+#publisher-image{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 #post-caption{
-    font-size: 16px;
+    font-size: 14px;
     margin-left: 20px;
     margin-right: 10px;
     font-family: comfortaa;

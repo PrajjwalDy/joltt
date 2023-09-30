@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@media(max-width:1080px){
+    .appbar-mv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        position: fixed;
+        top: 0;
+        z-index: 100;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+    }
+
+    .appbar-text{
+        font-size: 20px;
+        font-family: comfortaa;
+        color: #226880;
+        margin-left: 20px;
+    }
+
+    .view-pager{
+        width: 100%;
+        display: flex;
+        margin-top: 60px;
+        justify-content: flex-start;
+        align-items: center;
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+
+    .pagerText{
+        font-size: 18px;
+        font-family: comfortaa;
+        color: #6f7070;
+        margin: 10px;
+        margin-right: 20px;
+    }
+
+    .selected{
+        color: #226880;
+        padding: 8px;
+        border-bottom: 2px solid;
+    }
+
+    .nav-bar{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        background-color: #ffffff;
+        bottom: 0;
+        left: 0;
+        box-shadow: 0 0 10px 0 rgba(0,0,0,0.2);
+        
+    }
+    
+    .nav-bar-item{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* margin: 5px; */
+        font-family: comfortaa;
+        cursor: pointer;
+    }
+    
+    .nav-bar-img{
+        width: 25px;
+        height: 25px;
+        object-fit: cover;
+    }
+    
+    .nav-bar-text{
+        font-size: 12px;
+        font-family: comfortaa;
+        margin-top: 5px;
+        color: #226880;
+    }
+    
+    .nav-bar-img:hover{
+        background-color: #ffd7df;
+    }
+
+    .explore{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .explore-items{
+        text-align: center;
+    }
+
+    .explore-img-div{
+        background-color: #226880;
+        margin: 20px;
+        display: inline-flex;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .explore-img{
+        width: 50px;
+        height: 50px;
+        margin: 10px;
+        align-self: center;
+    }
+
+    .explore-text{
+        font-size: 14px;
+        font-family: comfortaa;
+        margin-top: -10px;
+        color: #226880;
+    }
+}

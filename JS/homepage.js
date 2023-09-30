@@ -119,7 +119,18 @@ const firebaseConfig = {
   }
 
   console.log("this is console");
+
+  //nav decleration
+
+  const home = document.getElementById('nav-home');
+  const profile = document.getElementById('nav-profile');
+  const notification = document.getElementById('nav-notification');
+  const explore = document.getElementById('nav-explore');
   
+  explore.addEventListener("click",(e)=>{
+    e.preventDefault();
+    window.location.href = "explore.html";
+  })
 
   function getUserDetails(){
     const user = ref(db,'Users/'+currentuser);
