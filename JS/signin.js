@@ -17,6 +17,9 @@ const firebaseConfig = {
     const email = document.getElementById("userEmail");
     const password = document.getElementById("userPassword");
 
+    const email2 = document.getElementById("userEmail-mv");
+    const password2 = document.getElementById("userPassword-mv");
+
     const signInbtn = document.getElementById('signinbtn-mv')
 
 
@@ -39,7 +42,7 @@ const firebaseConfig = {
 
     signInbtn.addEventListener("click",(e) =>{
         e.preventDefault();
-        signInWithEmailAndPassword(auth, email.value, password.value)
+        signInWithEmailAndPassword(auth, email2.value, password2.value)
         .then((userCredential)=>{
             currentUser = userCredential.user.uid;
             localStorage.setItem('currentUserUid',currentUser);
