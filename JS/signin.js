@@ -17,6 +17,8 @@ const firebaseConfig = {
     const email = document.getElementById("userEmail");
     const password = document.getElementById("userPassword");
 
+    const signInbtn = document.getElementById('signinbtn-mv')
+
 
     const app = initializeApp(firebaseConfig);
     const auth = getAuth(app);
@@ -34,3 +36,13 @@ const firebaseConfig = {
             window.location.href = "homepage.html";
         })
     });
+
+    signInbtn.addEventListener("click",(e) =>{
+        e.preventDefault();
+        signInWithEmailAndPassword(auth, email.value, password.value)
+        .then((userCredential)=>{
+            currentUser = userCredential.user.uid;
+            localStorage.setItem('currentUserUid',currentUser);
+            window.location.href = "homepage.html";
+        })
+    })
