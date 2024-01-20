@@ -1,6 +1,4 @@
 import { initializeApp} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
-// import { getAnalytics } from "firebase/analytics";
-// import {getDatabase} from "firebase/database";
 import { getAuth, signInWithEmailAndPassword  } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js";
 
 const firebaseConfig = {

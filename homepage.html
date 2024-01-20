@@ -10,73 +10,118 @@
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Handjet:wght@200&display=swap" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body>
+<body class="body">
+    <div class="appbar">
+        <img class="joltt-icon" src="/resource/img/joltt-white.png" alt="logo">
+
+        <div class="appbar-menu">
+
+            <div class="menu-home">
+                <img class="hash-img" src="resource/img/home.png" alt="home-img">
+                <h7 style="font-family: comfortaa;">Home</h7>
+
+            </div>
+
+            <img id="explore-web" src="resource/img/compass.png" style="height: 35px; width: 35px; margin-left: 25px; cursor: pointer;" alt="compass">
+
+            <div id="explore-menuh" class="explore-menu">
+                <div class="explore-menu-item">
+                    <img id="confessionRoom" class="explore-menu-img" src="resource/img/diary.png" alt="confession"/>
+                    <img id="schemePage" class="explore-menu-img" src="resource/img/bank.png" alt="scheme"/>
+                    <img id="jobsPage" class="explore-menu-img" src="resource/img/job_ico.png" alt="jobs"/>
+                    <img id="coursePage" class="explore-menu-img" src="resource/img/courses.png" alt="courses"/>
+                </div>
+            </div>   
+
+            <img src="resource/img/notification-bell.png" style="height: 35px; width: 35px; margin-left: 25px;" alt="compass">
+
+            <h6 id="internship-txt" class="text-menu-item">Internship</h6>
+            <h6 id="hackation-text" class="text-menu-item">Hackathons</h6>
+            
+        </div>
+
+             
+    </div>
+
     <div class="main-div">
 
         <div class="left-menu">
+            <div class="profile-section">
+                <img id="userProfileImage" class="profile-image" src="resource/img/test_profile.jpeg" alt="profile-image">
+                <p id="usernameProfile" class="user-name">Someone Example</p>
+                <p id="user-bio" class="user-bio">This is my bio</p>
+                <img class="line-hz" src="resource/img/line_horizontal.png" alt="line">
 
-            <img class="joltt-icon" src="/resource/img/joltt-green.png" alt="">
+                <div class="follow">
+                    <div class="follow-count">
+                        <p id="followerCount" class="count-text">
+                        5256
+                        </p>
+                        <p class="follow-text">Followers</p>
 
-            <div class="selected" style="margin-top: 50px;">
-                <img class="option-img" src="/resource/img/home.png" alt="home.jpg">
-                <h6 id="option-text">Home</h6>
+                    </div>
+                    <img class="line-vl" src="resource/img/line_verticle.png" alt="line">
+                    <div class="follow-count">
+                        <p id="followingCount" class="count-text">
+                        5256
+                        </p>
+                        <p class="follow-text">Following</p>
+
+                    </div>
+                </div>
+                <p class="view-text">View Profile</p>
             </div>
 
-            <div id="confessionRoom" class="options">
-                <img class="option-img" src="/resource/img/diary.png" alt="home.jpg">
-                <h6 id="option-text">Confession Room</h6>
-            </div>
+            <div class="people-section">
+                <h6 class="card-head">People</h6>
 
-            <div class="options">
-                <img class="option-img" src="/resource/img/club.png" alt="home.jpg">
-                <h6 id="option-text">Community</h6>
+                <div id="people-cardContainer">
+                        <!-- <div class="people-card">
+                            <img class="person-pic" src="resource/img/test_profile.jpeg" alt="person-pic">
+                            <p class="person-name">Person Name</p>
+                            <div class="follow-btn">
+                                <p id="follow-btn">Follow</p>
+                            </div>
+                        </div> -->
+                </div>
+               
             </div>
-
-            <div class="options">
-                <img class="option-img" src="/resource/img/briefcase.png" alt="home.jpg">
-                <h6 id="option-text">Jobs</h6>
-            </div>
-
-            <div class="options">
-                <img class="option-img" src="/resource/img/bank.png" alt="home.jpg">
-                <h6 id="option-text">Govt. Schemes</h6>
-            </div>
-
-            <div class="options">
-                <img class="option-img" src="/resource/img/event.png" alt="home.jpg">
-                <h6 id="option-text">Events</h6>
-            </div>
-
+            
+            
         </div>
 
         <div class="middle-menu">
 
             <div class="center">
                 <div id="post-container"  class="posts">
-                    <div class="appbar">
-                        <div>
-                            <p class="appbar-title">Home</p>
-                        </div>
-
-                    </div>
-
+                   
                 </div>
-                <div class="right-menu">
-
-                    <div class="profile-option">
-
-                        <p id="usernameProfile" class="username">Full Name</p>
-
-                        <img id="userProfileImage" class="circular-profile" src="/resource/img/man_user.png " alt="profileImage">
-
-                    </div>
-
-                </div>
+                
             </div>
+        </div>
+
+        <div class="right-menu">
+
+            <div class="trending-div">
+                <h6 class="card-head">Trending</h6>
+
+                <div class="trending-container">
+                    <div class="trending-card">
+                        <img class="hash-img" src="resource/img/hashtag.png" alt="image">
+                        <p id="trendText">#Trend</p>
+                        <p id="post-count">52 Posts</p>
+                    </div>
+                   
+                </div>
+
+            </div>
+
         </div>
 
     </div>
 
+
+    <!-- Mobile view htlml -->
 
     <div class="main-div-mv">
 

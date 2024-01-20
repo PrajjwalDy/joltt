@@ -25,8 +25,6 @@ const firebaseConfig = {
   const elementIn = document.querySelector('.element-in');
   const elementOut = document.querySelector('.element-out');
 
-
-
   //Divs
   const genderDiv = document.getElementById("gender-div");
   const locationDiv = document.getElementById("location-div");
@@ -42,22 +40,26 @@ const firebaseConfig = {
     genderMale=true ;
     genderDiv.style.display ="none";
     locationDiv.style.display ="flex"; 
+    saveData();
   });
 
   female.addEventListener("click",(e)=>{
     genderFemale= true;
     genderDiv.style.display ="none";
     locationDiv.style.display ="flex";
+    saveData();
   });
 
   locationProceed.addEventListener("click",(e)=>{
     locationDiv.style.display ="none";
     educationDev.style.display ="flex";
+    saveData();
   });
 
   educationProceed.addEventListener("click", (e)=>{
     educationDev.style.display ="none";
     interestDiv.style.display ="flex";
+    saveData();
   })
 
   function saveData(){

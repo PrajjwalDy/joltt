@@ -1,37 +1,13 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+*{
     margin: 0;
-    background-color: #f0f0f0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.container {
-    position: relative;
-    width: 400px; /* Adjust the container width as needed */
-    height: 100px; /* Adjust the container height as needed */
-    overflow: hidden;
+.body{
+    background-color: #226880;
 }
 
-.element {
-    width: 50px; /* Adjust the element width as needed */
-    height: 50px; /* Adjust the element height as needed */
-    position: absolute;
-    background-color: blue;
-    transition: transform 1s ease-in-out;
-}
 
-.element-in {
-    transform: translateX(100%);
-}
+/*--------------------------------------------------------------APPBAR------------------------------------------------- */
 
-.element-out {
-    transform: translateX(-100%);
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
