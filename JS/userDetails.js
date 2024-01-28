@@ -1,5 +1,5 @@
 import { initializeApp} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-app.js";
-import { getDatabase, ref , set} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
+import { getDatabase, ref , set, update} from "https://www.gstatic.com/firebasejs/9.6.6/firebase-database.js";
 // import { getAnalytics } from "firebase/analytics";
 import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.6.6/firebase-auth.js";
 
@@ -14,7 +14,9 @@ const firebaseConfig = {
     measurementId: "G-766ZLGP6PE"
   };
 
+  const app = initializeApp(firebaseConfig);
 
+  const db = getDatabase(app);
   //Objects
   const male = document.getElementById("male");
   const female = document.getElementById("female");
@@ -31,7 +33,19 @@ const firebaseConfig = {
   const educationDev = document.getElementById("education-div");
   const interestDiv = document.getElementById("interest-div");
 
-  const currentUser = localStorage.getItem('currentUserUid');
+  //Inputs 
+  const locationInput = document.getElementById("location");
+  const college = document.getElementById("college");
+  const course = document.getElementById("course");
+  const branch = document.getElementById("branch");
+  const year = document.getElementById("year");
+
+  const insterest = document.getElementById("interests");
+  const experience = document.getElementById("userExpereice");
+
+  const finish = document.getElementById("proceed-interest")
+
+  const currentUser = "bL7302pxMnZwajOOUIKTIDsseM03"; //localStorage.getItem('currentUserUid');
   var genderMale = false;
   var genderFemale = false;
 
@@ -62,12 +76,45 @@ const firebaseConfig = {
     saveData();
   })
 
+  finish.addEventListener("onClick",(e)=>{
+    updateSkills();
+  } )
+
+
+
   function saveData(){
-    const db = getDatabase();
-    set(ref(db,'Users/'+currentUser),{
+    update(ref(db,'Users/'+currentUser),{
         male:genderMale,
         female:genderFemale
     })
   }
+
+
+  function updateSkills() {
+    if (experience.value === '') {
+        // Do nothing if the input is empty
+    } else {
+        const texData = experience.value.trim();
+        const sentence = texData.replace(/\s/g, ''); // Remove spaces
+        const words = sentence.split(',');
+
+        // Initialize an empty list of skills
+        const skills = [];
+
+        // Extract skills from the words
+        for (const word of words) {
+            skills.push(word);
+        }
+
+        for (const skill of skills) {
+          update(ref(db,'Experience/'+currentUser+skill),{
+            expName: skill 
+        })
+        }
+    }
+}
+
+
+
 
 
