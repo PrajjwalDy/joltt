@@ -114,6 +114,10 @@
     color: white;
 }
 
+.play-de{
+    display: none;
+}
+
 
 @media(max-width:1080px){
 
@@ -185,6 +189,9 @@
     .horizontal-play-layout{
         height: 100px;
         border-radius: 10px;
+        display: flex;
+    }
+    .play-de{
         display: flex;
     }
 }
