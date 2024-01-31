@@ -76,43 +76,31 @@ const firebaseConfig = {
     saveData();
   })
 
-  finish.addEventListener("onClick",(e)=>{
-    updateSkills();
-  } )
+  finish.addEventListener("click", (e)=>{
+    e.preventDefault();
+    alert("Your profile has been created successfully! Please log in to start using the app.");
+    window.location.replace("/loginpage.html");
+  })
+
+
 
 
 
   function saveData(){
     update(ref(db,'Users/'+currentUser),{
         male:genderMale,
-        female:genderFemale
+        female:genderFemale,
+        place: locationInput.value,
+        branch: branch.value,
+        year: year.value,
+        skills:insterest.value,
+        experience:experience.value,
+        college:college.value,
+        course:course.value
+
     })
   }
 
-
-  function updateSkills() {
-    if (experience.value === '') {
-        // Do nothing if the input is empty
-    } else {
-        const texData = experience.value.trim();
-        const sentence = texData.replace(/\s/g, ''); // Remove spaces
-        const words = sentence.split(',');
-
-        // Initialize an empty list of skills
-        const skills = [];
-
-        // Extract skills from the words
-        for (const word of words) {
-            skills.push(word);
-        }
-
-        for (const skill of skills) {
-          update(ref(db,'Experience/'+currentUser+skill),{
-            expName: skill 
-        })
-        }
-    }
-}
 
 
 

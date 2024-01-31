@@ -299,7 +299,7 @@ loadTags();
 
   confessionRoom.addEventListener('click', (e)=>{
     e.preventDefault();
-    window.location.href = "confessionRoom.html";
+    window.location.href = "confessionRoom.html"
   });
 
   exploreWeb.addEventListener('click', (e) => {
